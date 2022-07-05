@@ -1,14 +1,13 @@
-<p style="color: green"><%= notice %></p>
+<section>
+  <h1>Budget app 💰</h1>
 
-<h1>Users</h1>
-
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+  <div>
+  <button type="button">
+    <%= link_to "LOG IN", new_user_session_path %>
+  </button>
+  <button type="button">
+    <%= link_to "SIGN UP", new_user_registration_path %>
+  </button>
 </div>
 
-<%= link_to "New user", new_user_path %>
+</section>
