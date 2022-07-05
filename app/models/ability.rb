@@ -10,8 +10,8 @@ class Ability
     if user.admin? :admin
       can :manage, :all
     else
-      can :manage, Category, user_id: user.id
-      can :manage, Payment, user_id: user.id
+      can :manage, Category, author_id: user.id
+      can :manage, Payment, author_id: user.id
     end
     #   return unless user.present?
     #   can :read, :all
