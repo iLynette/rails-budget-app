@@ -7,4 +7,8 @@ class User < ApplicationRecord
     has_many :payments, dependent: :destroy
 
     validates :name, presence: true, length: { maximum: 250 }
+
+    def admin?(request)
+        role == request.to_s
+      end
 end
