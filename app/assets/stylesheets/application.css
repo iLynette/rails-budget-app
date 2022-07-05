@@ -123,7 +123,7 @@ body {
 
  .pass {
    border: 0;
-   padding:15px;
+   padding:17px;
    width: 100%;
    outline: none;
  }
@@ -153,4 +153,25 @@ body {
  .field {
    display: flex;
    width: 100%;
+ }
+
+ .june {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   padding: 20px;
+   list-style: none;
+   background-color: #3582db;
+   font-weight: 700;
+ }
+
+ .forgot {
+   display: flex;
+   justify-content: center;
+   color: #2b343b;
+ }
+
+ .none {
+   display: none;
  }
