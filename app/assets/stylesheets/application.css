@@ -92,3 +92,65 @@ body {
     font-size: 20px;
     background-color: #f1f3f2;
  }
+
+ .bars {
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+   padding: 20px;
+   list-style: none;
+   background-color: #3582db;
+   font-family: 'Proxima Nova Light';
+ }
+
+ .container {
+   width: 100%;
+ }
+
+ .nems {
+   border: 0;
+   padding:15px;
+   width: 100%;
+   outline: none;
+ }
+
+ .emms {
+   border: 0;
+   padding:15px;
+   width: 100%;
+   outline: none;
+ }
+
+ .pass {
+   border: 0;
+   padding:15px;
+   width: 100%;
+   outline: none;
+ }
+
+ hr {
+   margin-left: 15px;
+ }
+
+ .actions {
+   display: flex;
+   justify-content: center;
+ }
+
+ .aye {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60%;
+   padding: 10px;
+   border-radius: 30px;
+   border: 1px solid #3582db;
+   background-color: #fff;
+   font-size: 1.3em;
+   margin-top: 10px;
+ }
+
+ .field {
+   display: flex;
+   width: 100%;
+ }
