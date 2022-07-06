@@ -1,14 +1,17 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+<nav class="mycategs">
+  <ul class="categs">
+    <li>
+      <p>Back</p>
+    </li>
+    <li>
+      <h1 class="txt">Categories</h1>
+    </li>
+    <li>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "toa" %>
+    </li>
+  </ul>
+</nav>
+<div class="addc">
+  <%= link_to "Add Category", new_category_path, class: "addst" %>
 </div>
 
-<%= link_to "New category", new_category_path %>

@@ -20,7 +20,12 @@ class CategoriesController < ApplicationController
 
   # POST /categories or /categories.json
   def create
+    if current_user.nil?
+      redirect_to categories_path
+      return
+    end
     @category = Category.new(category_params)
+    @category.author_id = current_user.id
 
     respond_to do |format|
       if @category.save

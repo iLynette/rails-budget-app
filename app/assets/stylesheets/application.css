@@ -175,3 +175,39 @@ body {
  .none {
    display: none;
  }
+
+ .categs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-weight: 700;
+ }
+
+ .toa {
+  background-color: #3582db;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+ }
+
+ .addc {
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   padding: 12px;
+   border-radius: 30px;
+   background-color: #3582db;
+   margin: 10px;
+   text-transform: uppercase;
+ }
+
+ .addst {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 800;
+ }
