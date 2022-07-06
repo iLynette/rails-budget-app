@@ -1,12 +1,12 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[ show edit update destroy ]
 
   def index
-    @categories = Category.all
+    @categories = current_user.categories.includes(:payments)
   end
 
   def show
-    @payments = @category.payments.order('created_at DESC')
+    @category = Category.find(params[:id])
+    @payments = @category.payments.order(created_at: :desc)
   end
 
   # GET /categories/new
@@ -29,7 +29,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to category_url(@category), notice: "Category was successfully created." }
+        format.html { redirect_to categories_url, notice: "Category was successfully created." }
         format.json { render :show, status: :created, location: @category }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -63,9 +63,7 @@ class CategoriesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_category
-      @category = Category.find(params[:id])
-    end
+    
 
     # Only allow a list of trusted parameters through.
     def category_params
