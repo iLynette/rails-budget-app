@@ -1,12 +1,17 @@
 <div id="<%= dom_id payment %>">
-  <p>
-    <strong>Name:</strong>
-    <%= payment.name %>
-  </p>
+  <div class="payy"
+    <p class="nam">
+      <strong>Name: </strong>
+      <%=  payment.name %>
+    </p>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= payment.amount %>
-  </p>
+    <p>
+      <strong>Amount: $</strong>
+      <%= payment.amount %>
+    </p>
 
+    <p class="move">
+      <%= link_to "Show", payment, class: 'move' %>
+    </p>
+  </div>
 </div>
