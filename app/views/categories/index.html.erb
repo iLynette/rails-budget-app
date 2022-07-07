@@ -1,7 +1,7 @@
 <nav class="mycategs">
   <ul class="categs">
     <li>
-      <p>Back</p>
+      <%= link_to '<', root_path, class: "arrow-left" %>
     </li>
     <li>
       <h1 class="txt">Categories</h1>
@@ -11,7 +11,28 @@
     </li>
   </ul>
 </nav>
+<% @categories.each do |category| %>
+  <%= link_to category_path(category) do %>
+    <div class="section-container">
+      <div class="icon">
+        <%= category.icon %>
+      </div>
+
+      <div class="name-time">
+        <p class="categories-name"><%= category.name %></p>
+        <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
+      </div>
+
+      <div class="left">
+        <div class="sum-delete">
+          <p class="sum">Sum: $<%= category.payments.sum(:amount)%></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+
 <div class="addc">
-  <%= link_to "Add Category", new_category_path, class: "addst" %>
+  <%= link_to "Add Category", new_category_path, class: "addsst" %>
 </div>
 
