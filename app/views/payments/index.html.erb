@@ -1,0 +1,26 @@
+<nav class="mycategs">
+  <ul class="categs">
+    <li>
+    <%= link_to '<', categories_path, class: "arrow-left" %>
+
+    </li>
+    <li>
+      <h1 class="txt">ADD PAYMENTS</h1>
+    </li>
+    <li>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "toa" %>
+    </li>
+  </ul>
+</nav>
+
+<p style="color: green"><%= notice %></p>
+
+<div class="payments">
+  <% @payments.each do |payment| %>
+    <%= render payment %>
+  <% end %>
+</div>
+
+<div class="new-payment">
+  <%= link_to "New payment", new_payment_path %>
+</div>

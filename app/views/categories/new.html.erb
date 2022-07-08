@@ -1,0 +1,15 @@
+<nav class="add-category">
+  <ul class="a-category">
+    <li>
+      <%= link_to '<', categories_path, class: "arrow-left" %>
+    </li>
+    <li>
+      <h1 class="ttitle">add category</h1>
+    </li>
+    <li>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "toa" %>
+    </li>
+  </ul>
+</nav>
+
+<%= render "form", category: @category %>
