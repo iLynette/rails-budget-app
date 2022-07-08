@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
   def index
-    @categories = current_user.categories.includes(:payments)
+    @categories = Category.all
   end
 
   def show

@@ -336,3 +336,7 @@ hr {
   box-shadow: 5px 5px 7px #a2abb1;
   width: 100%;
 }
+
+.d-none {
+  display: none;
+}
