@@ -197,30 +197,29 @@ hr {
   font-weight: 700;
 }
 
-/* .addc {
+.addc {
   display: flex;
+  flex: 2;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 95%;
   padding: 12px;
-  border-radius: 30px;
-  background-color: #3582db;
+  background-color: #5fb523;
   margin: 10px;
   text-transform: uppercase;
-} */
+}
 
 .addsst {
   display: flex;
+  flex: 0.3;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  padding: 5px;
-  border-radius: 30px;
-  border: 1px solid #3582db;
-  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #fff;
+  background-color: #5fb523;
   font-size: 17px;
   margin: 10px 10px;
-  color: #3582db;
+  color: #fff;
 }
 
 .a-category {
