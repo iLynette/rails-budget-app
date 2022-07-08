@@ -2,7 +2,10 @@
 
 > The Budget App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.
 
-## Project screenshot
+## Project screenshots
+<img width="326" alt="Screen Shot 2022-07-08 at 11 53 42 AM" src="https://user-images.githubusercontent.com/42867002/178007738-37fdf244-a5e6-487c-b36e-72621704b00b.png"><img width="325" alt="Screen Shot 2022-07-08 at 4 00 24 PM" src="https://user-images.githubusercontent.com/42867002/178007559-6f357b6e-9c6e-42e3-b9f7-a6765b5ab15a.png"><img width="325" alt="Screen Shot 2022-07-08 at 3 59 48 PM" src="https://user-images.githubusercontent.com/42867002/178007962-51fcccf4-8c61-4f6f-90bc-1c32f007a860.png">
+
+
 
 
 > The project is following data model below: 
