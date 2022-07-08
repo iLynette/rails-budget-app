@@ -1,7 +1,7 @@
 <nav class="navbars">
   <ul class="bars">
-  <li>
-    <%= link_to '<', root_path, class: "text-xl fa-solid fa-arrow-left" %>
+  <li class="arrow-left">
+    <%= link_to '<', root_path, class: "arrow-left" %>
   </li>
     <li>
       <p>Register</p>
@@ -37,7 +37,5 @@
       <%= f.submit "Sign up", class: 'aye' %>
     </div>
   <% end %>
-
-  <%= render "devise/shared/links" %>
   </div>
 </div>

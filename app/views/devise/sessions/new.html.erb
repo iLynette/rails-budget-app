@@ -1,13 +1,13 @@
 <nav class="may">
   <ul class="june">
-    <li>
-      <p>Back</p>
+    <li class="arrow-left">
+      <%= link_to '<', new_registration_path(resource_name), class: "arrow-left" %>
     </li>
     <li>
       <h2 class="logs">LOGIN</h2>
     </li>
     <li>
-      <i class="lll">Log in</i>
+      <i class="d-none">Log in</i>
     </li>
   </ul>
 </nav>
@@ -32,5 +32,3 @@
     <%= f.submit "Log in", class: 'aye' %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>

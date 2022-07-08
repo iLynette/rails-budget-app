@@ -202,16 +202,15 @@ hr {
   flex: 2;
   align-items: center;
   justify-content: center;
-  width: 95%;
+  width: 100%;
   padding: 12px;
   background-color: #5fb523;
-  margin: 10px;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
 }
 
 .addsst {
-  display: flex;
-  flex: 0.3;
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -262,6 +261,7 @@ hr {
   justify-content: space-between;
   padding: 20px;
   box-shadow: 5px 5px 7px #a2abb1;
+  color: #000;
 }
 
 .icon {
@@ -289,7 +289,7 @@ hr {
 }
 
 .payment-btn {
-  width: 50%;
+  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,12 +302,13 @@ hr {
 .expense-btn {
   color: #fff;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
 }
 
 .arrow-left {
-  font-size: 15px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .payy {

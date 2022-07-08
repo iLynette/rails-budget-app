@@ -21,8 +21,8 @@ RSpec.describe User, type: :model do
     end
 
     it 'is not valid without password' do
-        subject.password = 'ettescents'
-        expect(subject).to be_valid
+      subject.password = 'ettescents'
+      expect(subject).to be_valid
     end
   end
 end
