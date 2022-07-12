@@ -1,0 +1,42 @@
+<nav class="categories-nav">
+  <ul class="category-nav">
+    <li>
+      <%= link_to '<', payments_path, class: "arrow-left" %>
+    </li>
+    <li>
+      <h1 class="transf">Category Details</h1>
+    </li>
+    <li>
+      <%= button_to 'LOGOUT', destroy_user_session_path, method: :delete, class: "deletes" %>
+    </li>
+  </ul>
+</nav>
+<p style="color: green"><%= notice %></p>
+
+<div class="payments">
+  <div class="transaction">
+   <p>Total Transactions</p>
+   <p>$<%= @category.payments.sum(:amount) %></p>
+  </div>
+</div>
+
+<% @payments.each do |payment| %>
+  <div class="micons">
+    <div class="single">
+      <div>
+        <%= @category.icon %>
+      </div>
+      <div>
+        <p><%= payment.name %></p>
+        <p><%= payment.created_at.strftime("%Y/%m/%d %I:%M %p") %></p>  
+      </div>
+      <div>
+        <p>$<%= payment.amount %></p>
+      </div>
+    </div>
+  </div> 
+<% end %>
+
+<div class="payment-btn">
+  <%= link_to "ADD NEW TRANSACTION", new_payment_path(category_id: @category.id), class: 'expense-btn' %>
+</div>

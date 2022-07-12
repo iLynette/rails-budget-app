@@ -1,0 +1,29 @@
+<div class="wblock">
+<div class="block">
+    <%= form_with(model: payment, url: payments_url(category_id: category_id)) do |form| %>
+      <% if payment.errors.any? %>
+        <div style="color: red">
+          <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+          <ul>
+            <% payment.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div>
+        <%= form.text_field :name, class: 'f-text', placeholder: 'Enter payment name' %>
+      </div>
+      <hr />
+      <div>
+        <%= form.number_field :amount, class: 'f-text', placeholder: 'Enter Amount' %>
+      </div>
+
+      <div>
+        <%= form.submit 'Add', class: 'save' %>
+      </div>
+    <% end %>
+  </div>
+</div

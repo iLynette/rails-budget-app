@@ -1,0 +1,17 @@
+<div id="<%= dom_id category %>">
+  <p>
+    <strong>Name:</strong>
+    <%= category.name %>
+    <span><%= category.created_at.strftime("%Y/%m/%d") %></span>
+  </p>
+
+  <p>
+    <strong>Icon:</strong>
+    <%= category.icon %>
+  </p>
+
+  <div>
+    <p class="math">Sum: $<%= category.payments.sum(:amount)%></p>
+  </div>
+
+</div>

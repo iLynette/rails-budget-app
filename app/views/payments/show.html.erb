@@ -1,0 +1,25 @@
+<nav class="add-category">
+  <ul class="a-category">
+    <li>
+      <%= link_to '<', payments_path, class: "arrow-left" %>
+    </li>
+    <li>
+      <h1 class="t-details">Transaction Details</h1>
+    </li>
+    <li>
+      <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: "deletes" %>
+    </li>
+  </ul>
+</nav
+
+<p style="color: green"><%= notice %></p>
+
+<div class="">
+  <div class="">
+    <%= render @payment %>
+  </div>
+</div>
+
+<div class="backbtn">
+  <%= link_to "Back to categories", categories_path, class: "back" %>
+</div>

@@ -13,3 +13,330 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: 'Gladista Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gladista Script'), url('https://fonts.cdnfonts.com/s/82351/Gladista.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/18823/ProximaNova-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  font-style: normal;
+  font-weight: 250;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/18823/ProximaNovaT-Thin.woff') format('woff');
+}
+
+body {
+  background-color: #f1f3f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova Light', sans-serif;
+  text-decoration: none;
+}
+
+.hold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 2em;
+  flex: 0.7;
+  font-family: 'Gladista Script', sans-serif;
+  margin-top: 20%;
+  color: #2b343b;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  border: 0;
+}
+
+.login {
+  width: 100%;
+  padding: 17px;
+  background-color: #3582db;
+  border: #3582db;
+}
+
+.login > a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.signup > a {
+  color: #797c7e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.signup {
+  margin-top: 10px;
+  border: 0;
+  font-size: 20px;
+  background-color: #f1f3f2;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.nems {
+  border: 0;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+}
+
+.emms {
+  border: 0;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+}
+
+.pass {
+  border: 0;
+  padding: 17px;
+  width: 100%;
+  outline: none;
+}
+
+hr {
+  margin-left: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.aye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #3582db;
+  background-color: #fff;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.field {
+  display: flex;
+  width: 100%;
+}
+
+.june {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-weight: 700;
+}
+
+.forgot {
+  display: flex;
+  justify-content: center;
+  color: #2b343b;
+}
+
+.none {
+  display: none;
+}
+
+.categs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-weight: 700;
+}
+
+.toa,
+.deletes {
+  background-color: #3582db;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.addc {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #5fb523;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
+
+.addsst {
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid #fff;
+  background-color: #5fb523;
+  font-size: 17px;
+  margin: 10px 10px;
+  color: #fff;
+}
+
+.a-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-weight: 700;
+}
+
+.catn,
+.caticon,
+.f-text {
+  border: 0;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+}
+
+.submits,
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid #3582db;
+  background-color: #fff;
+  font-size: 17px;
+  margin: 10px 10px;
+  color: #3582db;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 5px 5px 7px #a2abb1;
+  color: #000;
+}
+
+.icon {
+  color: #000;
+  font-size: 18px;
+}
+
+.category-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  background-color: #3582db;
+  font-weight: 700;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 5px 5px 7px #a2abb1;
+  margin-bottom: 20px;
+}
+
+.payment-btn {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #3582db;
+}
+
+.expense-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.arrow-left {
+  font-size: 30px;
+  color: #fff;
+}
+
+.payy {
+  display: flex;
+  box-shadow: 5px 5px 7px #a2abb1;
+  padding: 20px;
+  gap: 10px;
+}
+
+.move {
+  display: flex;
+  color: green;
+}
+
+.micons {
+  display: flex;
+  width: 100%;
+}
+
+.single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 7px #a2abb1;
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
