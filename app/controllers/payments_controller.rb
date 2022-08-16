@@ -1,24 +1,17 @@
 class PaymentsController < ApplicationController
   before_action :set_payment, only: %i[show edit update destroy]
 
-  # GET /payments or /payments.json
   def index
     @payments = Payment.all
   end
 
-  # GET /payments/1 or /payments/1.json
   def show; end
 
-  # GET /payments/new
   def new
     @payment = Payment.new
     @categories = Category.where(author_id: current_user.id)
   end
 
-  # GET /payments/1/edit
-  def edit; end
-
-  # POST /payments or /payments.json
   def create
     @category = Category.find(params[:category_id])
     @payment = current_user.payments.new(payment_params)
@@ -35,7 +28,6 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /payments/1 or /payments/1.json
   def update
     respond_to do |format|
       if @payment.update(payment_params)
@@ -48,7 +40,6 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # DELETE /payments/1 or /payments/1.json
   def destroy
     @payment.destroy
 
@@ -60,12 +51,10 @@ class PaymentsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_payment
     @payment = Payment.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
   def payment_params
     params.require(:payment).permit(:name, :amount, :categories_id)
   end
