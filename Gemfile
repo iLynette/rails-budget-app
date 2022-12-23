@@ -9,7 +9,7 @@ gem 'devise'
 
 gem 'cancancan'
 
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 
 gem 'rails-controller-testing'
 
