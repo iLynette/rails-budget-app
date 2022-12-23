@@ -9,6 +9,8 @@ gem 'devise'
 
 gem 'cancancan'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 gem 'rails-controller-testing'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
